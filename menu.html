@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full Menu of Pind Balluchi Agra — North Indian, Punjabi, Chinese, Biryani, Starters, Main Course, Breads, Desserts, Drinks. Best restaurant near Taj Mahal." />
+  <meta name="keywords" content="Pind Balluchi menu, North Indian restaurant Agra menu, best biryani Agra, Punjabi food Agra" />
+  <title>Menu | Pind Balluchi — Best North Indian Restaurant in Agra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <img src="images/logo.png" alt="Pind Balluchi Logo" />
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Pind Balluchi" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Pind Balluchi</span>
+          <span class="logo-tagline">True Flavours of Northern India</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active">Menu</a></li>
+        <li><a href="order.html" class="nav-link">Order Online</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="order.html" class="nav-cta-btn">🛒 Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="images/hero.png" alt="Pind Balluchi Menu" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">Our Menu</h1>
+      <p class="page-hero-sub">Authentic Punjabi cuisine crafted with love — explore every flavour</p>
+    </div>
+  </section>
+
+  <!-- MENU FILTERS -->
+  <div class="menu-filters-wrap">
+    <div class="container">
+      <div class="menu-filters" id="menuFilters">
+        <button class="filter-btn active" data-cat="all" id="filterAll">All Items</button>
+        <button class="filter-btn" data-cat="biryani" id="filterBiryani">🍛 Rice & Biryani</button>
+        <button class="filter-btn" data-cat="raita" id="filterRaita">🥗 Raita & Salads</button>
+        <button class="filter-btn" data-cat="starter-veg" id="filterStarterVeg">🍢 Starters (Veg)</button>
+        <button class="filter-btn" data-cat="starter-nonveg" id="filterStarterNV">🍗 Starters (Non-Veg)</button>
+        <button class="filter-btn" data-cat="chinese" id="filterChinese">🍜 Chinese</button>
+        <button class="filter-btn" data-cat="main-veg" id="filterMainVeg">🍲 Main Course (Veg)</button>
+        <button class="filter-btn" data-cat="main-nonveg" id="filterMainNV">🍖 Main Course (Non-Veg)</button>
+        <button class="filter-btn" data-cat="breads" id="filterBreads">🫓 Breads</button>
+        <button class="filter-btn" data-cat="desserts" id="filterDesserts">🍨 Desserts</button>
+        <button class="filter-btn" data-cat="drinks" id="filterDrinks">🥤 Drinks</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU CONTENT -->
+  <main class="menu-main">
+    <div class="container">
+
+      <!-- RICE & BIRYANI -->
+      <section class="menu-section reveal" data-cat="biryani" id="secBiryani">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍛</span>
+          <div>
+            <h2 class="menu-section-title">Rice & Biryani</h2>
+            <p class="menu-section-desc">Aromatic basmati rice cooked with rich spices and your choice of protein</p>
+          </div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="biryani"><div class="mi-img-wrap"><img src="images/chicken_biryani.png" alt="Plain Rice" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Plain Rice</h3></div><p class="mi-desc">Steamed long-grain basmati rice</p><div class="mi-footer"><span class="mi-price">₹250</span><button class="mi-add-btn" data-name="Plain Rice" data-price="250" data-cat="Rice & Biryani" id="addPlainRice">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="biryani"><div class="mi-img-wrap"><img src="images/chicken_biryani.png" alt="Jeera Rice" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Jeera Rice</h3></div><p class="mi-desc">Basmati rice tempered with cumin seeds and spices</p><div class="mi-footer"><span class="mi-price">₹250</span><button class="mi-add-btn" data-name="Jeera Rice" data-price="250" data-cat="Rice & Biryani" id="addJeeraRice">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="biryani"><div class="mi-img-wrap"><img src="images/chicken_biryani.png" alt="Veg Biryani" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Veg Biryani</h3></div><p class="mi-desc">Seasonal vegetables slow-cooked with saffron basmati</p><div class="mi-footer"><span class="mi-price">₹475</span><button class="mi-add-btn" data-name="Veg Biryani" data-price="475" data-cat="Rice & Biryani" id="addVegBiryani">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="biryani"><div class="mi-img-wrap"><img src="images/chicken_biryani.png" alt="Chicken Biryani" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Biryani</h3><span class="bestseller-tag">Best Seller</span></div><p class="mi-desc">Tender chicken pieces layered with saffron basmati rice</p><div class="mi-footer"><span class="mi-price">₹549</span><button class="mi-add-btn" data-name="Chicken Biryani" data-price="549" data-cat="Rice & Biryani" id="addChickenBiryani">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="biryani"><div class="mi-img-wrap"><img src="images/chicken_biryani.png" alt="Mutton Biryani" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Mutton Biryani</h3></div><p class="mi-desc">Slow-cooked mutton with fragrant spiced rice</p><div class="mi-footer"><span class="mi-price">₹599</span><button class="mi-add-btn" data-name="Mutton Biryani" data-price="599" data-cat="Rice & Biryani" id="addMuttonBiryani">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="biryani"><div class="mi-img-wrap"><img src="images/chicken_biryani.png" alt="Egg Biryani" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Egg Biryani</h3></div><p class="mi-desc">Spiced eggs layered in aromatic basmati</p><div class="mi-footer"><span class="mi-price">₹499</span><button class="mi-add-btn" data-name="Egg Biryani" data-price="499" data-cat="Rice & Biryani" id="addEggBiryani">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- RAITA & SALADS -->
+      <section class="menu-section reveal" data-cat="raita" id="secRaita">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🥗</span>
+          <div><h2 class="menu-section-title">Raita & Salads</h2><p class="menu-section-desc">Cool refreshing accompaniments to complete your meal</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="raita"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Boondi Raita</h3></div><p class="mi-desc">Crispy boondi in spiced yogurt</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Boondi Raita" data-price="149" data-cat="Raita" id="addBoondiRaita">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="raita"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Mix Veg Raita</h3></div><p class="mi-desc">Fresh vegetables in seasoned yogurt</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Mix Veg Raita" data-price="149" data-cat="Raita" id="addMixVegRaita">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="raita"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Pineapple Raita</h3></div><p class="mi-desc">Sweet pineapple chunks in creamy yogurt</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Pineapple Raita" data-price="149" data-cat="Raita" id="addPineappleRaita">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="raita"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Masala Papad</h3></div><p class="mi-desc">Crispy papad topped with onion & spices</p><div class="mi-footer"><span class="mi-price">₹69</span><button class="mi-add-btn" data-name="Masala Papad" data-price="69" data-cat="Raita" id="addMasalaPapad">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="raita"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Gol Gappe</h3></div><p class="mi-desc">Crispy puri filled with spiced water and potatoes</p><div class="mi-footer"><span class="mi-price">₹99</span><button class="mi-add-btn" data-name="Gol Gappe" data-price="99" data-cat="Raita" id="addGolGappe">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="raita"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Aloo Chana Chaat</h3></div><p class="mi-desc">Tangy potato and chickpea street snack</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Aloo Chana Chaat" data-price="149" data-cat="Raita" id="addAlooChana">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- STARTERS VEG -->
+      <section class="menu-section reveal" data-cat="starter-veg" id="secStarterVeg">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍢</span>
+          <div><h2 class="menu-section-title">Starters — Vegetarian</h2><p class="menu-section-desc">Tandoor-fresh veg starters to begin your culinary journey</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="starter-veg"><div class="mi-img-wrap"><img src="images/paneer_tikka.png" alt="Hara Kebab" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Hara Kebab</h3></div><p class="mi-desc">Crispy spinach and pea patties with mint chutney</p><div class="mi-footer"><span class="mi-price">₹379</span><button class="mi-add-btn" data-name="Hara Kebab" data-price="379" data-cat="Starters Veg" id="addHaraKebab">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-veg"><div class="mi-img-wrap"><img src="images/paneer_tikka.png" alt="Paneer Tikka" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Paneer Tikka</h3><span class="bestseller-tag">Popular</span></div><p class="mi-desc">Marinated cottage cheese grilled in tandoor</p><div class="mi-footer"><span class="mi-price">₹479</span><button class="mi-add-btn" data-name="Paneer Tikka" data-price="479" data-cat="Starters Veg" id="addPaneerTikka">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-veg"><div class="mi-img-wrap"><img src="images/paneer_tikka.png" alt="Paneer Malai Tikka" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Paneer Malai Tikka</h3></div><p class="mi-desc">Soft paneer in creamy malai marinade, tandoor grilled</p><div class="mi-footer"><span class="mi-price">₹479</span><button class="mi-add-btn" data-name="Paneer Malai Tikka" data-price="479" data-cat="Starters Veg" id="addPaneerMalai">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-veg"><div class="mi-img-wrap"><img src="images/paneer_tikka.png" alt="Mushroom Kurkure" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Mushroom Kurkure</h3></div><p class="mi-desc">Crispy battered mushrooms with spicy dipping sauce</p><div class="mi-footer"><span class="mi-price">₹479</span><button class="mi-add-btn" data-name="Mushroom Kurkure" data-price="479" data-cat="Starters Veg" id="addMushroomKurkure">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-veg"><div class="mi-img-wrap"><img src="images/paneer_tikka.png" alt="Veg Kebab Platter" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Veg Kebab Platter</h3><span class="bestseller-tag">Chef's Pick</span></div><p class="mi-desc">Assorted vegetarian kebabs — a feast for the senses</p><div class="mi-footer"><span class="mi-price">₹550</span><button class="mi-add-btn" data-name="Veg Kebab Platter" data-price="550" data-cat="Starters Veg" id="addVegPlatter">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- STARTERS NON-VEG -->
+      <section class="menu-section reveal" data-cat="starter-nonveg" id="secStarterNV">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍗</span>
+          <div><h2 class="menu-section-title">Starters — Non-Vegetarian</h2><p class="menu-section-desc">Tandoor-smoked meaty bites that leave you craving more</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="starter-nonveg"><div class="mi-img-wrap"><img src="images/chicken_tikka.png" alt="Chicken Tikka" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Tikka</h3><span class="bestseller-tag">Best Seller</span></div><p class="mi-desc">Juicy chicken marinated in spices, grilled in clay oven</p><div class="mi-footer"><span class="mi-price">₹499</span><button class="mi-add-btn" data-name="Chicken Tikka" data-price="499" data-cat="Starters NonVeg" id="addChickenTikka">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-nonveg"><div class="mi-img-wrap"><img src="images/chicken_tikka.png" alt="Chicken Malai Tikka" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Malai Tikka</h3></div><p class="mi-desc">Creamy marinated chicken with a soft, melt-in-mouth texture</p><div class="mi-footer"><span class="mi-price">₹499</span><button class="mi-add-btn" data-name="Chicken Malai Tikka" data-price="499" data-cat="Starters NonVeg" id="addChickenMalai">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-nonveg"><div class="mi-img-wrap"><img src="images/chicken_tikka.png" alt="Tandoori Chicken" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Tandoori Chicken</h3></div><p class="mi-desc">Half/full chicken marinated and roasted in tandoor</p><div class="mi-footer"><span class="mi-price">₹399 – ₹599</span><button class="mi-add-btn" data-name="Tandoori Chicken" data-price="399" data-cat="Starters NonVeg" id="addTandooriChicken">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-nonveg"><div class="mi-img-wrap"><img src="images/chicken_tikka.png" alt="Fish Tikka" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Fish Tikka</h3></div><p class="mi-desc">Marinated fish pieces grilled to smoky perfection</p><div class="mi-footer"><span class="mi-price">₹549</span><button class="mi-add-btn" data-name="Fish Tikka" data-price="549" data-cat="Starters NonVeg" id="addFishTikka">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="starter-nonveg"><div class="mi-img-wrap"><img src="images/chicken_tikka.png" alt="Mutton Seekh Kebab" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Mutton Seekh Kebab</h3><span class="bestseller-tag">Must Try</span></div><p class="mi-desc">Spiced minced mutton skewers grilled with smoky char</p><div class="mi-footer"><span class="mi-price">₹549</span><button class="mi-add-btn" data-name="Mutton Seekh Kebab" data-price="549" data-cat="Starters NonVeg" id="addMuttonSeekhKebab">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- CHINESE -->
+      <section class="menu-section reveal" data-cat="chinese" id="secChinese">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍜</span>
+          <div><h2 class="menu-section-title">Chinese Section</h2><p class="menu-section-desc">Indo-Chinese favourites with a Punjabi twist</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Veg Hot & Sour Soup</h3></div><p class="mi-desc">Tangy and spicy classic Chinese soup</p><div class="mi-footer"><span class="mi-price">₹125</span><button class="mi-add-btn" data-name="Veg Hot & Sour Soup" data-price="125" data-cat="Chinese" id="addHotSourSoup">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Sweet Corn Soup</h3></div><p class="mi-desc">Warm chicken soup with sweet corn kernels</p><div class="mi-footer"><span class="mi-price">₹150</span><button class="mi-add-btn" data-name="Chicken Sweet Corn Soup" data-price="150" data-cat="Chinese" id="addChickenCornSoup">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Veg Manchurian</h3></div><p class="mi-desc">Crispy veg balls in a tangy Manchurian sauce</p><div class="mi-footer"><span class="mi-price">₹349</span><button class="mi-add-btn" data-name="Veg Manchurian" data-price="349" data-cat="Chinese" id="addVegManchurian">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Paneer Chilli</h3></div><p class="mi-desc">Spicy tossed paneer with peppers and chilli sauce</p><div class="mi-footer"><span class="mi-price">₹399</span><button class="mi-add-btn" data-name="Paneer Chilli" data-price="399" data-cat="Chinese" id="addPaneerChilli">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Manchurian</h3></div><p class="mi-desc">Juicy chicken balls in tangy soy-garlic sauce</p><div class="mi-footer"><span class="mi-price">₹499</span><button class="mi-add-btn" data-name="Chicken Manchurian" data-price="499" data-cat="Chinese" id="addChickenManchurian">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Veg Hakka Noodles</h3></div><p class="mi-desc">Stir-fried noodles with crunchy vegetables</p><div class="mi-footer"><span class="mi-price">₹275</span><button class="mi-add-btn" data-name="Veg Hakka Noodles" data-price="275" data-cat="Chinese" id="addVegNoodles">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="chinese"><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Fried Rice</h3></div><p class="mi-desc">Wok-tossed rice with tender chicken and veggies</p><div class="mi-footer"><span class="mi-price">₹349</span><button class="mi-add-btn" data-name="Chicken Fried Rice" data-price="349" data-cat="Chinese" id="addChickenFriedRice">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- MAIN COURSE VEG -->
+      <section class="menu-section reveal" data-cat="main-veg" id="secMainVeg">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍲</span>
+          <div><h2 class="menu-section-title">Main Course — Vegetarian</h2><p class="menu-section-desc">Rich, flavourful gravies and curries — the heart of every Punjabi meal</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="main-veg"><div class="mi-img-wrap"><img src="images/malai_kofta.png" alt="Paneer Butter Masala" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Paneer Butter Masala</h3></div><p class="mi-desc">Cottage cheese in rich buttery tomato gravy</p><div class="mi-footer"><span class="mi-price">₹379</span><button class="mi-add-btn" data-name="Paneer Butter Masala" data-price="379" data-cat="Main Veg" id="addPaneerButterMasala">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-veg"><div class="mi-img-wrap"><img src="images/paneer_tikka.png" alt="Kadhai Paneer" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Kadhai Paneer</h3><span class="bestseller-tag">Popular</span></div><p class="mi-desc">Paneer cooked dry-style in a spiced kadhai masala</p><div class="mi-footer"><span class="mi-price">₹379</span><button class="mi-add-btn" data-name="Kadhai Paneer" data-price="379" data-cat="Main Veg" id="addKadhaiPaneer">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-veg"><div class="mi-img-wrap"><img src="images/malai_kofta.png" alt="Pindi Choley" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Pindi Choley</h3><span class="bestseller-tag">Chef's Special</span></div><p class="mi-desc">Bold Punjabi chickpeas slow-cooked with whole spices</p><div class="mi-footer"><span class="mi-price">₹339</span><button class="mi-add-btn" data-name="Pindi Choley" data-price="339" data-cat="Main Veg" id="addPindiCholey">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-veg"><div class="mi-img-wrap"><img src="images/dal_makhani.png" alt="Dal Makhani" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Dal Makhani Special</h3><span class="bestseller-tag">Must Try</span></div><p class="mi-desc">Overnight slow-cooked black lentils with butter and cream</p><div class="mi-footer"><span class="mi-price">₹359</span><button class="mi-add-btn" data-name="Dal Makhani Special" data-price="359" data-cat="Main Veg" id="addDalMakhani">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-veg"><div class="mi-img-wrap"><img src="images/malai_kofta.png" alt="Malai Kofta" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Malai Kofta</h3><span class="bestseller-tag">Fan Fav</span></div><p class="mi-desc">Soft paneer dumplings in a velvety cream tomato sauce</p><div class="mi-footer"><span class="mi-price">₹399</span><button class="mi-add-btn" data-name="Malai Kofta" data-price="399" data-cat="Main Veg" id="addMalaiKofta">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- MAIN COURSE NON-VEG -->
+      <section class="menu-section reveal" data-cat="main-nonveg" id="secMainNV">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍖</span>
+          <div><h2 class="menu-section-title">Main Course — Non-Vegetarian</h2><p class="menu-section-desc">Hearty meat curries cooked the authentic Punjabi way</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="main-nonveg"><div class="mi-img-wrap"><img src="images/butter_chicken.png" alt="Chicken Curry" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Chicken Curry</h3></div><p class="mi-desc">Classic home-style chicken in aromatic masala gravy</p><div class="mi-footer"><span class="mi-price">₹475</span><button class="mi-add-btn" data-name="Chicken Curry" data-price="475" data-cat="Main NonVeg" id="addChickenCurry">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-nonveg"><div class="mi-img-wrap"><img src="images/butter_chicken.png" alt="Kadhai Chicken" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Kadhai Chicken</h3></div><p class="mi-desc">Chicken cooked in robust kadhai masala with peppers</p><div class="mi-footer"><span class="mi-price">₹550</span><button class="mi-add-btn" data-name="Kadhai Chicken" data-price="550" data-cat="Main NonVeg" id="addKadhaiChicken">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-nonveg"><div class="mi-img-wrap"><img src="images/butter_chicken.png" alt="Butter Chicken" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Butter Chicken</h3><span class="bestseller-tag">Best Seller</span></div><p class="mi-desc">Murgh Makhani — the iconic creamy tomato-butter curry</p><div class="mi-footer"><span class="mi-price">₹475</span><button class="mi-add-btn" data-name="Butter Chicken" data-price="475" data-cat="Main NonVeg" id="addButterChicken">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-nonveg"><div class="mi-img-wrap"><img src="images/butter_chicken.png" alt="Mutton Curry" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Mutton Curry</h3></div><p class="mi-desc">Slow-cooked mutton pieces in a rich onion-tomato gravy</p><div class="mi-footer"><span class="mi-price">₹549</span><button class="mi-add-btn" data-name="Mutton Curry" data-price="549" data-cat="Main NonVeg" id="addMuttonCurry">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-nonveg"><div class="mi-img-wrap"><img src="images/butter_chicken.png" alt="Bhuna Meat" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Bhuna Meat</h3><span class="bestseller-tag">Must Try</span></div><p class="mi-desc">Dry-style mutton bhuna with robust Punjabi spices</p><div class="mi-footer"><span class="mi-price">₹649</span><button class="mi-add-btn" data-name="Bhuna Meat" data-price="649" data-cat="Main NonVeg" id="addBhunaMeat">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="main-nonveg"><div class="mi-img-wrap"><img src="images/butter_chicken.png" alt="Egg Curry" class="mi-img" loading="lazy" /></div><div class="mi-body"><div class="mi-top"><span class="nonveg-dot">🔴</span><h3 class="mi-name">Egg Curry</h3></div><p class="mi-desc">Boiled eggs simmered in a spiced masala gravy</p><div class="mi-footer"><span class="mi-price">₹379</span><button class="mi-add-btn" data-name="Egg Curry" data-price="379" data-cat="Main NonVeg" id="addEggCurry">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- BREADS -->
+      <section class="menu-section reveal" data-cat="breads" id="secBreads">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🫓</span>
+          <div><h2 class="menu-section-title">Indian Breads</h2><p class="menu-section-desc">Fresh from our tandoor — the perfect accompaniment to every curry</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="breads"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Tandoori Roti</h3></div><p class="mi-desc">Whole wheat bread baked in a clay oven</p><div class="mi-footer"><span class="mi-price">₹35</span><button class="mi-add-btn" data-name="Tandoori Roti" data-price="35" data-cat="Breads" id="addTandooriRoti">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="breads"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Butter Naan</h3><span class="bestseller-tag">Popular</span></div><p class="mi-desc">Fluffy leavened bread brushed with fresh butter</p><div class="mi-footer"><span class="mi-price">₹60</span><button class="mi-add-btn" data-name="Butter Naan" data-price="60" data-cat="Breads" id="addButterNaan">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="breads"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Garlic Naan</h3></div><p class="mi-desc">Naan topped with garlic and coriander, tandoor fresh</p><div class="mi-footer"><span class="mi-price">₹90</span><button class="mi-add-btn" data-name="Garlic Naan" data-price="90" data-cat="Breads" id="addGarlicNaan">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="breads"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Laccha Paratha</h3></div><p class="mi-desc">Multi-layered flaky whole wheat flatbread</p><div class="mi-footer"><span class="mi-price">₹60</span><button class="mi-add-btn" data-name="Laccha Paratha" data-price="60" data-cat="Breads" id="addLacchaParatha">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="breads"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Stuffed Naan</h3><span class="bestseller-tag">Must Try</span></div><p class="mi-desc">Naan stuffed with spiced potato or paneer filling</p><div class="mi-footer"><span class="mi-price">₹90</span><button class="mi-add-btn" data-name="Stuffed Naan" data-price="90" data-cat="Breads" id="addStuffedNaan">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- DESSERTS -->
+      <section class="menu-section reveal" data-cat="desserts" id="secDesserts">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🍨</span>
+          <div><h2 class="menu-section-title">Desserts</h2><p class="menu-section-desc">A sweet ending to a perfect Punjabi feast</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="desserts"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Gulab Jamun</h3></div><p class="mi-desc">Soft milk-solid dumplings in rose-cardamom syrup</p><div class="mi-footer"><span class="mi-price">₹49</span><button class="mi-add-btn" data-name="Gulab Jamun" data-price="49" data-cat="Desserts" id="addGulabJamun">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="desserts"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Rasmalai</h3></div><p class="mi-desc">Cottage cheese patties soaked in saffron-milk cream</p><div class="mi-footer"><span class="mi-price">₹49</span><button class="mi-add-btn" data-name="Rasmalai" data-price="49" data-cat="Desserts" id="addRasmalai">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="desserts"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Kulfi / Faluda</h3></div><p class="mi-desc">Traditional Indian ice cream in classic flavours</p><div class="mi-footer"><span class="mi-price">₹75 – ₹150</span><button class="mi-add-btn" data-name="Kulfi" data-price="75" data-cat="Desserts" id="addKulfi">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="desserts"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Gajar Halwa</h3></div><p class="mi-desc">Slow-cooked carrot pudding with ghee, milk and dry fruits</p><div class="mi-footer"><span class="mi-price">₹129</span><button class="mi-add-btn" data-name="Gajar Halwa" data-price="129" data-cat="Desserts" id="addGajarHalwa">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="desserts"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Moong Dal Halwa</h3></div><p class="mi-desc">Silky lentil halwa made with ghee and dry fruits</p><div class="mi-footer"><span class="mi-price">₹129</span><button class="mi-add-btn" data-name="Moong Dal Halwa" data-price="129" data-cat="Desserts" id="addMoongDalHalwa">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+      <!-- DRINKS -->
+      <section class="menu-section reveal" data-cat="drinks" id="secDrinks">
+        <div class="menu-section-header">
+          <span class="menu-section-icon">🥤</span>
+          <div><h2 class="menu-section-title">Drinks & Beverages</h2><p class="menu-section-desc">Refreshing drinks to quench your thirst</p></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item" data-cat="drinks"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Lassi (Sweet/Salted)</h3><span class="bestseller-tag">Popular</span></div><p class="mi-desc">Thick creamy Punjabi yogurt drink</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Lassi" data-price="149" data-cat="Drinks" id="addLassi">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="drinks"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Jal Jeera</h3></div><p class="mi-desc">Tangy cumin-spiced cooling summer drink</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Jal Jeera" data-price="149" data-cat="Drinks" id="addJalJeera">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="drinks"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Shikanji</h3></div><p class="mi-desc">Fresh lemon-spiced desi lemonade</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Shikanji" data-price="149" data-cat="Drinks" id="addShikanji">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="drinks"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Cold Coffee</h3></div><p class="mi-desc">Chilled blended coffee with milk and cream</p><div class="mi-footer"><span class="mi-price">₹149</span><button class="mi-add-btn" data-name="Cold Coffee" data-price="149" data-cat="Drinks" id="addColdCoffee">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="drinks"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Soft Drinks</h3></div><p class="mi-desc">Pepsi, Coke, Sprite, 7UP — your choice</p><div class="mi-footer"><span class="mi-price">₹75</span><button class="mi-add-btn" data-name="Soft Drinks" data-price="75" data-cat="Drinks" id="addSoftDrinks">+ Add</button></div></div></div>
+          <div class="menu-item" data-cat="drinks"><div class="mi-body"><div class="mi-top"><span class="veg-dot">🟢</span><h3 class="mi-name">Green Tea</h3></div><p class="mi-desc">Refreshing hot green tea with herbs</p><div class="mi-footer"><span class="mi-price">₹50</span><button class="mi-add-btn" data-name="Green Tea" data-price="50" data-cat="Drinks" id="addGreenTea">+ Add</button></div></div></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Pind Balluchi" class="footer-logo-img" />
+            <span class="footer-logo-name">Pind Balluchi</span>
+          </div>
+          <p class="footer-about">Authentic North Indian & Punjabi cuisine in the heart of Agra. A top-rated restaurant near the iconic Taj Mahal.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#secBiryani">Rice & Biryani</a></li>
+            <li><a href="#secStarterNV">Non-Veg Starters</a></li>
+            <li><a href="#secMainVeg">Veg Main Course</a></li>
+            <li><a href="#secBreads">Breads</a></li>
+            <li><a href="#secDesserts">Desserts</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit Us</h4>
+          <p>📍 Dinesh Nagar, 30/17, Fatehabad Rd,<br />Tajganj, Agra, UP 282001</p>
+          <p>📞 <a href="tel:07500247365">075002 47365</a></p>
+          <p>🕛 Open till 12 AM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Pind Balluchi, Agra. All rights reserved. | Best North Indian Restaurant near Taj Mahal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART FAB -->
+  <a href="order.html" class="cart-fab" id="cartFab" aria-label="View Cart">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </a>
+
+  <script src="main.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

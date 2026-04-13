@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order online from Pind Balluchi Agra — North Indian and Punjabi food delivered to your door or picked up from our restaurant near Taj Mahal." />
+  <title>Order Online | Pind Balluchi — Best North Indian Restaurant in Agra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="order.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <img src="images/logo.png" alt="Pind Balluchi Logo" />
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Pind Balluchi" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Pind Balluchi</span>
+          <span class="logo-tagline">True Flavours of Northern India</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="order.html" class="nav-link active">Order Online</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ORDER PAGE -->
+  <main class="order-main">
+    <div class="container">
+      <div class="order-header">
+        <h1 class="order-title">Order Online</h1>
+        <p class="order-subtitle">Fast delivery or pickup from Pind Balluchi, Agra</p>
+      </div>
+
+      <div class="order-layout">
+        <!-- LEFT: QUICK ADD ITEMS -->
+        <div class="order-left">
+          <div class="order-section-card">
+            <h2 class="order-section-title">🍽️ Quick Add Popular Items</h2>
+            <div class="quick-add-grid" id="quickAddGrid">
+              <!-- Populated by JS -->
+            </div>
+            <a href="menu.html" class="btn btn-outline-dark full-width-btn" id="browseFullMenuBtn">Browse Full Menu</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: CART -->
+        <div class="order-right">
+          <!-- CART -->
+          <div class="cart-card" id="cartCard">
+            <h2 class="cart-title">🛒 Your Cart</h2>
+            <div class="cart-items" id="cartItems">
+              <div class="cart-empty" id="cartEmpty">
+                <span class="cart-empty-icon">🍽️</span>
+                <p>Your cart is empty</p>
+                <a href="menu.html" class="btn btn-primary" id="startOrderBtn">Start Ordering</a>
+              </div>
+            </div>
+            <div class="cart-summary" id="cartSummary" style="display:none">
+              <div class="summary-row"><span>Subtotal</span><span id="subtotalAmt">₹0</span></div>
+              <div class="summary-row"><span>Delivery Fee</span><span id="deliveryFeeAmt">₹40</span></div>
+              <div class="summary-row"><span>Taxes (5%)</span><span id="taxAmt">₹0</span></div>
+              <div class="summary-row total-row"><span>Total</span><span id="totalAmt">₹0</span></div>
+            </div>
+          </div>
+
+          <!-- CHECKOUT FORM -->
+          <div class="checkout-card" id="checkoutCard" style="display:none">
+            <h2 class="cart-title">📋 Checkout Details</h2>
+
+            <!-- Delivery Type -->
+            <div class="delivery-toggle">
+              <button class="delivery-btn active" data-type="delivery" id="btnDelivery">🚚 Delivery</button>
+              <button class="delivery-btn" data-type="pickup" id="btnPickup">🏃 Self Pickup</button>
+            </div>
+
+            <form class="checkout-form" id="checkoutForm">
+              <div class="form-group">
+                <label for="custName">Full Name *</label>
+                <input type="text" id="custName" class="co-input" placeholder="Enter your name" required />
+              </div>
+              <div class="form-group">
+                <label for="custPhone">Phone Number *</label>
+                <input type="tel" id="custPhone" class="co-input" placeholder="+91 " required maxlength="13" />
+              </div>
+              <div class="form-group delivery-field" id="deliveryFields">
+                <label for="custAddress">Delivery Address *</label>
+                <textarea id="custAddress" class="co-input co-textarea" placeholder="House no, Street, Area, Agra" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="custNote">Special Instructions (optional)</label>
+                <input type="text" id="custNote" class="co-input" placeholder="e.g. Less spicy, extra raita..." />
+              </div>
+
+              <!-- PAYMENT -->
+              <div class="payment-section">
+                <h3 class="pay-title">💳 Payment Method</h3>
+                <div class="payment-opts">
+                  <label class="pay-opt" id="payCash">
+                    <input type="radio" name="payment" value="cash" checked />
+                    <div class="pay-opt-body">
+                      <span class="pay-icon">💵</span>
+                      <span class="pay-label">Cash on Delivery</span>
+                    </div>
+                  </label>
+                  <label class="pay-opt" id="payUPI">
+                    <input type="radio" name="payment" value="upi" />
+                    <div class="pay-opt-body">
+                      <span class="pay-icon">📱</span>
+                      <span class="pay-label">UPI / GPay / PhonePe</span>
+                    </div>
+                  </label>
+                  <label class="pay-opt" id="payCard">
+                    <input type="radio" name="payment" value="card" />
+                    <div class="pay-opt-body">
+                      <span class="pay-icon">💳</span>
+                      <span class="pay-label">Credit / Debit Card</span>
+                    </div>
+                  </label>
+                </div>
+
+                <!-- UPI QR -->
+                <div class="upi-section" id="upiSection" style="display:none">
+                  <div class="upi-qr-box">
+                    <div class="upi-qr-placeholder">
+                      <span>📱</span>
+                      <p>Scan with any UPI app</p>
+                      <strong>UPI ID: pindballuchi@upi</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD DETAILS -->
+                <div class="card-section" id="cardSection" style="display:none">
+                  <div class="card-ui">
+                    <div class="card-preview" id="cardPreview">
+                      <div class="card-chip">▣</div>
+                      <div class="card-number-display" id="cardNumDisplay">•••• •••• •••• ••••</div>
+                      <div class="card-bottom">
+                        <span id="cardNameDisplay">CARDHOLDER</span>
+                        <span id="cardExpDisplay">MM/YY</span>
+                      </div>
+                    </div>
+                    <div class="card-inputs">
+                      <input type="text" class="co-input" id="cardNum" placeholder="Card Number" maxlength="19" />
+                      <div class="card-row">
+                        <input type="text" class="co-input" id="cardExp" placeholder="MM/YY" maxlength="5" />
+                        <input type="text" class="co-input" id="cardCvv" placeholder="CVV" maxlength="3" />
+                      </div>
+                      <input type="text" class="co-input" id="cardName" placeholder="Cardholder Name" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary place-order-btn" id="placeOrderBtn">
+                Place Order →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ORDER SUCCESS MODAL -->
+  <div class="order-modal-overlay" id="orderModal" style="display:none">
+    <div class="order-modal">
+      <div class="modal-icon">🎉</div>
+      <h2>Order Placed!</h2>
+      <p>Thank you! Your order has been received. We'll prepare it fresh and have it delivered soon.</p>
+      <div class="modal-eta">
+        <span class="eta-icon">⏱️</span>
+        <span class="eta-text">Estimated time: <strong>30–45 mins</strong></span>
+      </div>
+      <a href="index.html" class="btn btn-primary" id="backHomeBtn">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Pind Balluchi, Agra. All rights reserved. | Best North Indian Restaurant near Taj Mahal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>
